@@ -1,0 +1,516 @@
+/*---NavBar---*/
+#navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 5px rgb(136, 134, 134);
+}
+
+.navbar-brand img{
+    height: 70px;
+    padding: 20px 0px 20px 30px;
+    margin: 0;
+}
+
+.navbar-nav li {
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-nav li a {
+    float: center;
+    text-align: center;
+}
+
+#navBar ul li a:hover {
+    color: #aadfd0!important;
+}
+
+#navbar ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+  }
+
+#navBar ul {
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+}
+
+.navbar {
+    background: white;
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link {
+    color: black!important;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#NavBar .box {
+    background-color: #ff3e3e;
+    margin-right: 30px;
+}
+
+#NavBar .box .nav-link {
+    text-align: center;
+    color: white!important;
+    font-weight: 400;
+    padding: 10px 25px 10px 25px;
+}
+
+#NavBar .box:hover {
+    background-color: black;
+}
+
+/*------About--------*/
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about a {
+    color: #ff3e3e;
+    font-weight: bold;
+}
+
+#about .abtText {
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+#about h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3px;
+}
+
+#about h2::after {
+    content: '';
+    background: #aadfd0;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin-top: 20;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about img {
+    padding-left: 10px;
+}
+
+/*--------------Did you know-------------*/
+#know {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(170,223,208,0.8)), url(img/womencover.png);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.know {
+    margin-top: 0px;
+}
+
+#know .icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#know h3{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3px;
+}
+
+#know p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+#know a {
+    color: inherit;
+    text-decoration: none;
+    background-color: none;
+}
+
+#know .col:hover {
+    background-color:#ff3e3e;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/*---------Team-------------*/
+#team {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: black;
+}
+
+#team .container {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: black !important;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3px;
+}
+
+#team h1::after {
+    content: '';
+    background: #aadfd0;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.profile-pic {
+    margin-top: 25px;
+    width: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    letter-spacing: 0.3px;
+}
+
+.profile-pic h3 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #ff3e3e;
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+.profile-pic p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+#team .fa{
+    height: 25px;
+    width: 25px;
+    color: #ff3e3e;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+    transition: 0.5s;
+}
+
+/*------getInvolved--------*/
+#getInvolved {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #FFF2C5;
+}
+
+#getInvolved .abtText {
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;;
+}
+
+#getInvolved h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3px;
+}
+
+#getInvolved h2::after {
+    content: '';
+    background:#ff3e3e;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin-top: 20;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#getInvolved img {
+    padding-left: 10px;
+}
+
+
+
+/*----------Programs---------------*/
+#programs {
+    padding: 40px 0;
+    background-color: white;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#programs h1::after {
+    content: '';
+    background: #ff3e3e;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 50px;
+}
+
+#programs .col {
+    padding: 0px 20px 0px 20px;
+}
+
+.student1 {
+    margin: 30px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.student2 {
+    margin: 10px auto;
+    display: inline;
+    width: 100%;
+    float: left;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.student3 {
+    margin: 30px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.student1:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.student2:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.student3:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.stu-head {
+    background-color: #ff3e3e;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.stu-head h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    padding: 5px 30px 5px 30px;
+}
+
+.stu-content {
+    float: left;
+    padding: 0 15px;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stu-content ul {
+    padding: 0;
+}
+
+.stu-content ul li {
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.stu-content p {
+    font-size: 12pt;
+    padding: 30px 30px 30px 30px;
+    margin: 0px;
+}
+
+.stu-content .button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.stu-content .button1 {
+    background-color: black;
+}
+
+.stu-content .button1:hover {
+    background-color: #ff3e3e;
+}
+
+.stu-head .fa {
+    font-size: 40px;
+    margin: 20px auto;
+    height: 80px;
+    width: 80px;
+    padding-top: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+
+/*------------Get in Touch-----------*/
+
+#contact {
+    background-color: #aadfd0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form {
+    padding: 0px 20px 15px 20px;
+}
+
+.contact-form .form-content {
+    padding-top: 15px;
+}
+
+#contact .button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    background-color: #ff3e3e;
+}
+
+#contact .button:hover {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    background-color: black;
+}
+
+#contact h1::after {
+    content: '';
+    background:black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 10px;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border: none;
+}
+
+.col-md-4 p {
+    padding-top: 15px;
+}
+
+.col-md-4 .icons {
+    text-align: left;
+}
+
+#contact .fa{
+    height: 30px;
+    width: 30px;
+    color: #ff3e3e;
+    background: #fff;
+    padding: 5px 0px 3px 8px;
+    border-radius: 50%;
+    margin: 5px 10px 20px 0px;
+}
+
