@@ -61,7 +61,6 @@
 
 #NavBar .box {
     background-color: #ff3e3e;
-    margin-right: 30px;
 }
 
 #NavBar .box .nav-link {
@@ -78,7 +77,7 @@
 /*------About--------*/
 #about {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 #about a {
@@ -93,7 +92,7 @@
 }
 
 #about h2 {
-    padding-top: 40px;
+    padding-top: 20px;
     text-align: center;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.3px;
@@ -513,4 +512,3 @@ h1 {
     border-radius: 50%;
     margin: 5px 10px 20px 0px;
 }
-
